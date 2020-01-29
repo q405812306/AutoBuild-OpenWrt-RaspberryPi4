@@ -7,7 +7,7 @@
 #=================================================
 
 #添加lienol的openwrt源
-sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/feeds.conf.default
+sed -i '$a\src-git lienol https:\/\/github.com\/Lienol\/openwrt-package' openwrt/feeds.conf.default
 ./openwrt/scripts/feeds clean
 ./openwrt/scripts/feeds update -a
 rm -rf feeds/lienol/lienol/v2ray

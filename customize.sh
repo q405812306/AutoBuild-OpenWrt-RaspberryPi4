@@ -8,8 +8,8 @@
 
 #添加lienol的openwrt源
 sed -i '$a\src-git lienol https://github.com/Lienol/openwrt-package' openwrt/feeds.conf.default
-./scripts/feeds clean
-./scripts/feeds update -a
+./openwrt/scripts/feeds clean
+./openwrt/scripts/feeds update -a
 rm -rf feeds/lienol/lienol/v2ray
 rm -rf feeds/lienol/lienol/openssl1.1
 rm -rf feeds/lienol/lienol/trojan
@@ -24,7 +24,7 @@ rm -rf package/lean/luci-app-kodexplorer
 rm -rf package/lean/luci-app-pppoe-relay
 rm -rf package/lean/luci-app-pptp-server
 rm -rf package/lean/luci-app-v2ray-server
-./scripts/feeds install -a
+./openwrt/scripts/feeds install -a
 
 #添加其他package
 git clone https://github.com/lisaac/luci-lib-docker.git openwrt/package/luci-lib-docker

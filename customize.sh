@@ -25,3 +25,9 @@ rm -rf package/lean/luci-app-pppoe-relay
 rm -rf package/lean/luci-app-pptp-server
 rm -rf package/lean/luci-app-v2ray-server
 ./scripts/feeds install -a
+
+#添加其他package
+git clone https://github.com/lisaac/luci-lib-docker.git openwrt/package/luci-lib-docker
+git clone https://github.com/lisaac/luci-app-dockerman.git openwrt/package/luci-app-dockerman
+git clone https://github.com/sypopo/luci-theme-argon-mc.git openwrt/package/luci-theme-argon-mc
+git clone https://github.com/rufengsuixing/luci-app-onliner.git openwrt/package/luci-app-onliner

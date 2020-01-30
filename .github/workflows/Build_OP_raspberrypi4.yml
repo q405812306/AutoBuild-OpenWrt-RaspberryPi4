@@ -75,6 +75,12 @@ jobs:
         rm -rf package/lean/luci-app-pptp-server
         rm -rf package/lean/luci-app-v2ray-server
         ./scripts/feeds install -a
+        
+    - name: install etc package
+      working-directory: ./openwrt
+      run: |
+        chomd +x etc-package.sh && ./etc-package.sh
+      
     - name: Configuration Customization - Build_raspberrypi4
       env:
         CONFIG_FILE: 'raspberrypi4.config'

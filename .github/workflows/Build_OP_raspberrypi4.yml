@@ -1,3 +1,10 @@
+#=================================================
+# Description: Build OpenWrt using GitHub Actions
+# Lisence: MIT
+# Author: eSirPlayground
+# Youtube Channel: https://goo.gl/fvkdwm 
+#=================================================
+
 name: Build_raspberrypi4
 
 on: 
@@ -75,12 +82,7 @@ jobs:
         rm -rf package/lean/luci-app-pptp-server
         rm -rf package/lean/luci-app-v2ray-server
         ./scripts/feeds install -a
-        
-    - name: install etc package
-      working-directory: ./openwrt
-      run: |
-        chomd +x etc-package.sh && ./etc-package.sh
-      
+        ./scripts/feeds install -a
     - name: Configuration Customization - Build_raspberrypi4
       env:
         CONFIG_FILE: 'raspberrypi4.config'

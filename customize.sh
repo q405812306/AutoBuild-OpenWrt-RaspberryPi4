@@ -20,3 +20,7 @@ mkdir -p openwrt/files/etc/config && cp -f wireless ./openwrt/files/etc/config/w
 
 #修改机器名称
 sed -i 's/OpenWrt/RaspberryPi4/g' openwrt/package/base-files/files/bin/config_generate
+
+#替换banner
+rm -rf openwrt/package/base-files/files/etc/banner
+cp -f banner openwrt/package/base-files/files/etc/

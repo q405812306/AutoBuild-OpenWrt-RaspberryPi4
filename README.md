@@ -1,7 +1,7 @@
 # 基于 AutoBuild-OpenWrt 编译树莓派4的openwrt固件
 
 Build OpenWrt firware [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) using GitHub Actions  
-Some package from lienol(https://github.com/Lienol/openwrt-package)   
+Some packages from [lienol](https://github.com/Lienol/openwrt-package)   
 Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenWrt/
 
 ## Usage

@@ -1,8 +1,6 @@
 #=================================================
 # Description: Build OpenWrt using GitHub Actions
 # Lisence: MIT
-# Author: eSirPlayground
-# Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
 name: Build_raspberrypi4

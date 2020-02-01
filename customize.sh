@@ -19,3 +19,6 @@ sed -i 's/or "1"%>/or "1"%> ( <%=luci.sys.exec("expr `cat \/sys\/class\/thermal\
 
 #默认开启wifi
 mkdir -p openwrt/files/etc/config && cp -f wireless ./openwrt/files/etc/config/wireless
+
+#修改机器名称
+sed -i 's/OpenWrt/RaspberryPi4/g' openwrt/package/base-files/files/bin/config_generate

@@ -2,8 +2,6 @@
 #=================================================
 # Description: DIY script
 # Lisence: MIT
-# Author: eSirPlayground
-# Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
 #添加自定义组件

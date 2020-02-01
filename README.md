@@ -1,4 +1,4 @@
-# 基于 AutoBuild-OpenWrt 编译树莓派4openwrt固件
+# 基于 AutoBuild-OpenWrt 编译树莓派4的openwrt固件
 
 Build OpenWrt firware [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) using GitHub Actions  
 Some package from lienol(https://github.com/Lienol/openwrt-package)

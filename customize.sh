@@ -5,6 +5,7 @@
 #=================================================
 
 #添加自定义组件
+git clone https://github.com/sypopo/luci-theme-atmaterial.git ./openwrt/package/lean/luci-theme-atmaterial
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./openwrt/package/luci-app-adguardhome
 git clone https://github.com/sypopo/luci-theme-argon-mc.git ./openwrt/package/luci-theme-argon-mc
 git clone https://github.com/rufengsuixing/luci-app-onliner.git ./openwrt/package/luci-app-onliner

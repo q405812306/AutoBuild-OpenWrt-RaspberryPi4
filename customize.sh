@@ -24,7 +24,6 @@ sed -i '$a\net.bridge.bridge-nf-call-arptables = 1' openwrt/package/base-files/f
 #默认开启wifi并配置网口
 mkdir -p openwrt/files/etc/config
 cp -f wireless ./openwrt/files/etc/config/wireless
-cp -f network ./openwrt/files/etc/config/network
 
 #修改机器名称
 sed -i 's/OpenWrt/RaspberryPi4/g' openwrt/package/base-files/files/bin/config_generate

@@ -6,7 +6,7 @@
 
 #添加自定义组件
 rm -rf ./openwrt/package/lean/luci-app-ssr-plus
-https://github.com/xsm1997/openwrt-kumasocks.git ./openwrt/package/openwrt-kumasocks
+git clone https://github.com/xsm1997/openwrt-kumasocks.git ./openwrt/package/openwrt-kumasocks
 git clone https://github.com/xsm1997/luci-app-ssr-plus.git ./openwrt/package/luci-app-ssr-plus
 git clone https://github.com/sypopo/luci-theme-atmaterial.git ./openwrt/package/lean/luci-theme-atmaterial
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./openwrt/package/luci-app-adguardhome

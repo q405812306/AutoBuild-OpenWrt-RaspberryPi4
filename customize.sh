@@ -23,6 +23,8 @@ sed -i 's/or "1"%>/or "1"%> ( <%=luci.sys.exec("expr `cat \/sys\/class\/thermal\
 sed -i '$a\net.bridge.bridge-nf-call-ip6tables = 1' openwrt/package/base-files/files/etc/sysctl.conf
 sed -i '$a\net.bridge.bridge-nf-call-iptables = 1' openwrt/package/base-files/files/etc/sysctl.conf
 sed -i '$a\net.bridge.bridge-nf-call-arptables = 1' openwrt/package/base-files/files/etc/sysctl.conf
+rm -rf openwrt/package/network/config/firewall/files/firewall.config
+cp -f firewall.config ./openwrt/package/network/config/firewall/files/firewall.config
 
 #默认开启wifi并配置网口
 mkdir -p openwrt/files/etc/config

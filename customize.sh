@@ -11,6 +11,7 @@ git clone https://github.com/sypopo/luci-theme-argon-mc.git ./openwrt/package/lu
 git clone https://github.com/rufengsuixing/luci-app-onliner.git ./openwrt/package/luci-app-onliner
 git clone https://github.com/lisaac/luci-app-diskman ./openwrt/package/luci-app-diskman
 mkdir -p ./openwrt/package/parted && cp -i ./openwrt/package/luci-app-diskman/Parted.Makefile ./openwrt/package/parted/Makefile
+git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git ./openwrt/package/luci-app-unblockneteasemusic
 
 #修复核心及添加温度显示
 sed -i 's|pcdata(boardinfo.system or "?")|luci.sys.exec("uname -m") or "?"|g' openwrt/feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
